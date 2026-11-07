@@ -1,0 +1,185 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f0ff;
+  color: #333;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 35px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app > h1 {
+  color: #6c4ab6;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.app > p {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  text-align: center;
+  color: #777;
+  margin: 15px 0;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 15px 0 7px;
+  color: #444;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  font-size: 15px;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #805ad5;
+}
+
+button {
+  padding: 11px 18px;
+  background: #6c4ab6;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 12px 6px 5px 0;
+}
+
+button:hover {
+  background: #543695;
+}
+
+.login-box button,
+.reading-form button {
+  width: 100%;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 850px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 12px;
+}
+
+.dashboard h3 {
+  color: #6c4ab6;
+  margin: 25px 0 15px;
+}
+
+.reading-form {
+  max-width: 500px;
+  padding: 20px;
+  background: #faf8ff;
+  border-radius: 10px;
+}
+
+.reading-card {
+  padding: 18px;
+  margin: 12px 0;
+  border: 1px solid #e5ddf5;
+  border-radius: 9px;
+  background: #fcfbff;
+}
+
+.reading-card strong {
+  color: #6c4ab6;
+}
+
+.reading-card p {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reading-card small {
+  color: #777;
+}
+
+.report-card {
+  margin-top: 20px;
+  padding: 22px;
+  background: #f8f5ff;
+  border: 1px solid #e5ddf5;
+  border-radius: 10px;
+}
+
+.report-card h3 {
+  margin-top: 0;
+}
+
+.report-card p {
+  margin: 12px 0;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px 12px;
+  }
+
+  .dashboard {
+    padding: 18px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+  }
+
+  .dashboard-header h2 {
+    font-size: 19px;
+  }
+}
